@@ -3,8 +3,10 @@
     <label>
       <span>С</span><br>
       <md-datepicker
-          ng-model="$ctrl.from"
+          ng-model="$ctrl.dateFrom"
+          ng-change="$ctrl.change()"
           md-placeholder="Enter from date"
+          md-max-date="$ctrl.dateTo"
           md-open-on-focus=""
           md-hide-icons="calendar"></md-datepicker>
     </label>
@@ -13,8 +15,10 @@
     <label>
       <span>По</span><br>
       <md-datepicker
-          ng-model="$ctrl.to"
+          ng-model="$ctrl.dateTo"
+          ng-change="$ctrl.change()"
           md-placeholder="Enter to date"
+          md-min-date="$ctrl.dateFrom"
           md-open-on-focus=""
           md-hide-icons="calendar"></md-datepicker>
     </label>
