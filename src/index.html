@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
@@ -7,9 +7,22 @@
   <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body ng-app="app">
+<body ng-controller="MainController">
 
-<mc-dates></mc-dates>
+<mc-dates from="from" to="to"></mc-dates>
+
+<br><br>
+
+<div>
+  <label>
+    С
+    <input type="date" ng-model="from">
+  </label>
+  <label>
+    По
+    <input type="date" ng-model="to">
+  </label>
+</div>
 
 <script src="bower_components/angular/angular.min.js"></script>
 
@@ -19,6 +32,8 @@
 <script src="bower_components/angular-material/angular-material.min.js"></script>
 
 <script src="app.module.js"></script>
+<script src="app.config.js"></script>
+<script src="app.controller.js"></script>
 <script src="mc-dates/mc-dates.module.js"></script>
 <script src="mc-dates/mc-dates.component.js"></script>
 </body>
