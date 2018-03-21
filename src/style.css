@@ -1,0 +1,40 @@
+mc-dates {
+  display: inline-block;
+}
+
+.mc-dates.blocks {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.mc-dates.blocks > li {
+  /* todo подумать над расположением элементов */
+  display: inline-block;
+}
+
+.mc-dates.blocks > li .md-datepicker-input {
+  min-width: 160px;
+}
+
+.mc-dates.block-date-from {
+  display: inline-block;
+}
+
+.mc-dates.presets {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+}
+
+.mc-dates.presets > li {
+
+}
+
+.mc-dates.presets > li a {
+  color: #555555;
+  text-decoration: none;
+}
